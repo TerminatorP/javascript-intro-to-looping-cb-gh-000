@@ -1,7 +1,12 @@
 function forLoop(arr) {
   for (let i = 0; i < 25; i++) {
-    arr.push(`"I am ${i} strange loop${i === 0 ? '' : 's'}."`);
+    if (i === 1 || i === 0) {
+      arr.push(`I am ${i} strange loop.`);
+    } else {
+      arr.push(`I am ${i} strange loops.`);
+    }
   }
+  return arr;
 }
 
 function whileLoop(arr) {
