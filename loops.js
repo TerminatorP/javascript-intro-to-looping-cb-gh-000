@@ -8,7 +8,7 @@ function forLoop(arr) {
 }
 
 function whileLoop(arr) {
-  while (arr >= 0) {
+  while (arr > 0) {
     console.log(--arr);
   }
   return 'done';
